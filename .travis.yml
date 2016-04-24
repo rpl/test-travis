@@ -1,0 +1,18 @@
+sudo: false
+cache:
+  directories:
+    - node_modules
+env:
+  - TRAVIS=y
+
+language: nodejs
+node_js:
+  - "5"
+
+before_script:
+  - ./scripts/01-prepare-mc-cloned-repo.sh
+
+script:
+  - npm install
+  - cd mozilla-central
+  - ../node_modules/.bin/jsdoc -c ../jsdoc.json -d ../out

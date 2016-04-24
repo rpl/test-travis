@@ -1,0 +1,13 @@
+{
+  "name": "test-travis-jsdoc",
+  "private": true,
+  "version": "1.0.0",
+  "description": "run jsdoc on travis",
+  "author": "",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "eslint": "2.8.0",
+    "ink-docstrap": "1.1.4",
+    "jsdoc": "3.4.0"
+  }
+}

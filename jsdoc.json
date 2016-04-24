@@ -1,0 +1,29 @@
+{
+  "plugins": ["plugins/markdown"],
+  "opts": {
+    "readme": "../README.md",
+    "tutorials": "../docs/",
+    "template": "../node_modules/ink-docstrap/template"
+  },
+  "templates": {
+    "systemName"            : "Firefox WebExtensions Internals",
+    "includeDate"           : "true",
+    "navType"               : "vertical",
+    "theme"                 : "superhero",
+    "linenums"              : "true",
+    "collapseSymbols"       : "true",
+    "inverseNav"            : "true",
+    "outputSourceFiles"     : "true" ,
+    "outputSourcePath"      : "true" ,
+    "syntaxTheme"           : "default",
+    "sort"                  : "false"
+  },
+  "source": {
+    "include": [
+      "./toolkit/components/extensions/",
+      "./toolkit/modules/addons/",
+      "./browser/components/extensions/"
+    ],
+    "includePattern": ".+\\.(js)(m)?$"
+  }
+}
